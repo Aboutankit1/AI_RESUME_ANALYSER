@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume ATS Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>📑 Resume ATS Analyzer</h1>
+      <p>Upload your resume and compare it against a job description to check ATS compatibility.</p>
+    </header>
+
+    <main>
+      <form id="uploadForm" class="card">
+        <div class="form-group">
+          <label for="resumeFile">Upload Resume:</label>
+          <input type="file" id="resumeFile" accept=".pdf,.docx,.txt" required>
+        </div>
+
+        <div class="form-group">
+          <label for="jobDesc">Job Description (optional):</label>
+          <textarea id="jobDesc" placeholder="Paste job description here..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">🚀 Analyze Resume</button>
+      </form>
+
+      <section id="results" class="results card hidden"></section>
+    </main>
+
+    <footer>
+      <p>⚡ Powered by AI | ATS Analyzer Demo</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
